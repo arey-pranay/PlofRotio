@@ -55,7 +55,7 @@ export const Experience = (props) => {
           y: section === 1 ? -viewport.height / 5 : 1.4,
           x: section === 1 ? 1.8 : 4,
         }}
-        rotation-y={section === 1 ? Math.PI / 4 : -Math.PI / 4}
+        rotation-y={section === 1 ? Math.PI / 2 : 0}
       >
         {/* <motion.group
         position={[0, -1.5, -10]}
@@ -67,14 +67,14 @@ export const Experience = (props) => {
       > */}
         <directionalLight position={[-5, 3, 5]} intensity={0.4} />
         <Float>
-          <mesh position={[1, -3, -15]} scale={[2, 2, 2]}>
+          <mesh position={[4.2, -2.6, -5]} scale={[2, 2, 2]}>
             <sphereGeometry />
             <MeshDistortMaterial
-              opacity={0.8}
+              opacity={0.3}
               transparent
               distort={0.4}
-              speed={4}
-              color={"red"}
+              speed={8.5}
+              color={"black"}
             />
           </mesh>
         </Float>
@@ -91,14 +91,14 @@ export const Experience = (props) => {
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[1.4, 1.4, 1.4]} position={[-3, -1, -11]}>
+          <mesh scale={[2, 2, 2]} position={[-3, -1, -11]}>
             <boxGeometry />
             <MeshWobbleMaterial
               opacity={0.8}
               transparent
               factor={1}
               speed={5}
-              color={"blue"}
+              color={"red"}
             />
           </mesh>
         </Float>

@@ -186,9 +186,9 @@ const SkillsSection = () => {
     <Section>
       <motion.div whileInView={"visible"}>
         <div className="flex gap-20">
-          <div className=" mt-10 space-y-1.5 text-purple-200">
+          <div className=" mt-10 space-y-1.5 text-purple-50">
             {" "}
-            <h2 className="text-4xl mb-5 text-white  font-bold">Frontend</h2>
+            <h2 className="text-4xl mb-10 text-white  font-bold">Frontend</h2>
             {skills.map((skill, index) => (
               <div className="w-64" key={index}>
                 <motion.h3
@@ -210,7 +210,7 @@ const SkillsSection = () => {
                 </motion.h3>
                 <div className="h-2 w-full bg-gray-200 rounded-full mt-2">
                   <motion.div
-                    className="h-full bg-indigo-500 rounded-full "
+                    className="h-full bg-pink-400 rounded-full "
                     style={{ width: `${skill.level}%` }}
                     initial={{
                       scaleX: 0,
@@ -232,11 +232,11 @@ const SkillsSection = () => {
           </div>
           <div>
             <h2 className="text-4xl text-white font-bold mt-10">Backend</h2>
-            <div className=" mt-5 space-y-1">
+            <div className=" mt-10 space-y-1">
               {languages.map((lng, index) => (
                 <div className="w-64" key={index}>
                   <motion.h3
-                    className="text-xl font-bold text-purple-200"
+                    className="text-xl font-bold text-purple-50"
                     initial={{
                       opacity: 0,
                     }}
@@ -254,7 +254,7 @@ const SkillsSection = () => {
                   </motion.h3>
                   <div className="h-2 w-full bg-gray-200 rounded-full mt-2">
                     <motion.div
-                      className="h-full bg-indigo-500 rounded-full "
+                      className="h-full bg-green-300 rounded-full "
                       style={{ width: `${lng.level}%` }}
                       initial={{
                         scaleX: 0,
