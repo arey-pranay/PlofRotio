@@ -9,7 +9,7 @@ export const Menu = (props) => {
       >
         <div
           className={`bg-white h-0.5 rounded-md w-full transition-all ${
-            menuOpened ? "rotate-45  translate-y-0.5" : ""
+            menuOpened ? "rotate-45 translate-y-0.5" : ""
           }`}
         />
         <div

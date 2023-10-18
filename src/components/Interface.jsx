@@ -42,39 +42,23 @@ export const Interface = () => {
 
 const AboutSection = () => {
   return (
-    <Section>
-      <h1 className="text-5xl text-white font-extrabold leading-snug">
-        <span className="text-3xl pb-10">Presenting to you✨</span>
-        <br />
-        <span className="bg-white text-purple-900 px-1 italic">
-          Pranay Parikh
-        </span>
-      </h1>
-      <motion.p
-        className="text-lg text-gray-50 mt-8 "
-        initial={{
-          opacity: 0,
-          y: 25,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 1,
-          delay: 1.5,
-        }}
-      >
-        This is how he is mostly found, sitting on his desk
-        <br />
-        either learning how to make amazing websites
-        <br /> or actually making one.{" "}
-      </motion.p>
-      <div className="flex gap-2">
-        {" "}
-        <motion.button
-          className={`bg-pink-500 text-white py-4 px-8 
-      rounded-lg font-bold text-lg mt-8`}
+    <>
+      {" "}
+      {/* <div className="hidden  opacity-25 lg:block absolute top-96 mt-12 left-96 ml-80 text-xs skew-x-[45deg] -skew-y-[14deg]">
+        If, due to excess coding, <br />
+        he falls down from his chair, <br />
+        please hit <b>Ctrl + R</b>
+      </div> */}
+      <Section>
+        <h1 className="text-5xl text-white font-extrabold leading-snug">
+          <span className="text-3xl pb-10">Presenting to you✨</span>
+          <br />
+          <span className="bg-white text-purple-900 px-1 italic">
+            Pranay Parikh
+          </span>
+        </h1>
+        <motion.p
+          className="text-lg text-gray-50 mt-8 "
           initial={{
             opacity: 0,
             y: 25,
@@ -85,54 +69,78 @@ const AboutSection = () => {
           }}
           transition={{
             duration: 1,
-            delay: 2,
+            delay: 1.5,
           }}
         >
-          Say Hi !
-        </motion.button>
-        <motion.button
-          className={`border-2 border-pink-300 text-pink-200 py-4 px-8 
-      rounded-lg font-bold text-lg mt-8`}
-          initial={{
-            opacity: 0,
-            y: 25,
-          }}
-          whileInView={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 1,
-            delay: 2,
-          }}
-        >
-          Connect With Pranay
-        </motion.button>
-      </div>
+          This is how he is mostly found, sitting on his desk
+          <br />
+          either learning how to make amazing websites
+          <br /> or actually making one.{" "}
+        </motion.p>
+        <div className="flex gap-2">
+          {" "}
+          <motion.button
+            className={`bg-pink-500 text-white py-4 px-8 
+    rounded-lg font-bold text-lg mt-8`}
+            initial={{
+              opacity: 0,
+              y: 25,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+            }}
+          >
+            Say Hi !
+          </motion.button>
+          <motion.button
+            className={`border-2 border-pink-300 text-pink-200 py-4 px-8 
+    rounded-lg font-bold text-lg mt-8`}
+            initial={{
+              opacity: 0,
+              y: 25,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+            }}
+            transition={{
+              duration: 1,
+              delay: 0.5,
+            }}
+          >
+            Download Resume
+          </motion.button>
+        </div>
 
-      <motion.p
-        className="text-sm text-gray-50 mt-12 "
-        initial={{
-          opacity: 0,
-          y: 25,
-        }}
-        whileInView={{
-          opacity: 1,
-          y: 0,
-        }}
-        transition={{
-          duration: 1,
-          delay: 1.5,
-        }}
-      >
-        <i>
-          Beware ! He might get very excited and passionate if your project
-          seems very interesting
-          <br /> and start working on it right away. You might want to{" "}
-          <strong>scroll down to know more</strong>{" "}
-        </i>
-      </motion.p>
-    </Section>
+        <motion.p
+          className="text-sm text-gray-50 mt-12 "
+          initial={{
+            opacity: 0,
+            y: 25,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+          }}
+          transition={{
+            duration: 1,
+            delay: 1.5,
+          }}
+        >
+          <i>
+            Beware ! He might get very excited and passionate if your project
+            seems very interesting
+            <br /> and start working on it right away. You might want to{" "}
+            <strong>scroll down to know more</strong>{" "}
+          </i>
+        </motion.p>
+      </Section>
+    </>
   );
 };
 
@@ -185,7 +193,7 @@ const SkillsSection = () => {
   return (
     <Section>
       <motion.div whileInView={"visible"}>
-        <div className="flex gap-20">
+        <div className="flex gap-20 flex-col md:flex-row md:gap-12">
           <div className=" mt-10 space-y-1.5 text-purple-50">
             {" "}
             <h2 className="text-4xl mb-10 text-white  font-bold">Frontend</h2>

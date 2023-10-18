@@ -285,7 +285,8 @@ export function Office(props) {
       </group>
       <group
         name="LapTop_Cube002"
-        position={[0.704, 1.505, -1.801]}
+        position={[1.32, 1.605, -1.701]}
+        scale={[1.4, 1.4, 1.1]}
         rotation={[0, -1.459, 0]}
       >
         <mesh
