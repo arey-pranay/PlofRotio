@@ -259,7 +259,7 @@ export function Office(props) {
       </group>
       <group
         name="Chair"
-        position={[0.812, 0.387, -1]}
+        position={[1, 0.387, -0.6]}
         rotation={[Math.PI, -0.015, Math.PI]}
       >
         <mesh

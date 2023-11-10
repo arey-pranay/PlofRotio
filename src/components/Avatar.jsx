@@ -20,17 +20,25 @@ export function Avatar(props) {
     "animations/Standing Idle.fbx"
   );
 
-  // const { animations: standingAnimation } = useFBX("animations/ReadyJump.fbx");
+  const { animations: talkingAnimation } = useFBX(
+    "animations/ReadyPhoneCall.fbx"
+  );
   const { animations: fallingAnimation } = useFBX(
-    "animations/ReadyFalling.fbx"
+    "animations/ReadyAgreeing.fbx"
   );
 
   typingAnimation[0].name = "Typing";
   standingAnimation[0].name = "Standing";
-  fallingAnimation[0].name = "Falling";
+  fallingAnimation[0].name = "Agree";
+  talkingAnimation[0].name = "Talk";
 
   const { actions } = useAnimations(
-    [typingAnimation[0], fallingAnimation[0], standingAnimation[0]],
+    [
+      typingAnimation[0],
+      fallingAnimation[0],
+      standingAnimation[0],
+      talkingAnimation[0],
+    ],
     group
   );
   useEffect(() => {

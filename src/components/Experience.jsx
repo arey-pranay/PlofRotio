@@ -11,11 +11,14 @@ import { useEffect, useState } from "react";
 import { framerMotionConfig } from "../config";
 import { Avatar } from "./Avatar";
 import { Office } from "./Office";
+import { Projects } from "./Projects";
 
 export const Experience = (props) => {
   const { menuOpened } = props;
   const { viewport } = useThree();
   const data = useScroll();
+  const isMobile = window.innerWidth < 768;
+  const responsiveRation = viewport.width / 12;
   const [section, setSection] = useState(0);
   const cameraPositionX = useMotionValue();
   const cameraLookAtX = useMotionValue();
@@ -42,8 +45,12 @@ export const Experience = (props) => {
     <>
       <ambientLight intensity={1} />
       <motion.group
-        position={[2.8, -12, 4.8]}
-        scale={[0.9, 0.9, 0.9]}
+        position={[isMobile ? 0 : 2.8, -12, isMobile ? 10 : 4.8]}
+        scale={[
+          isMobile ? 0.4 : 0.9,
+          isMobile ? 0.4 : 0.9,
+          isMobile ? 0.4 : 0.9,
+        ]}
         rotation-y={-Math.PI / 3}
         animate={{
           y: section === 0 ? 0.35 : -1,
@@ -81,12 +88,20 @@ export const Experience = (props) => {
           },
           2: {
             z: 20,
-            y: -viewport.height * 1.4,
+            y: -viewport.height * 1.38,
             x: 2.8,
-            rotateX: 2,
-            rotateZ: 2.5,
+            rotateX: 2.5,
+            rotateZ: 2,
             rotateY: 8.1,
           },
+          // 3: {
+          //   z: 20,
+          //   y: -viewport.height * 2.35,
+          //   x: 2.8,
+          //   rotateX: 2.5,
+          //   rotateZ: 2,
+          //   rotateY: 8.1,
+          // },
         }}
       >
         <directionalLight position={[-5, 3, 5]} intensity={0.4} />
@@ -103,7 +118,10 @@ export const Experience = (props) => {
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[2, 2, 2]} position={[-2, -2, -5]}>
+          <mesh
+            scale={[2, 2, 2]}
+            position={isMobile ? [0, 1, -3] : [-2, -2, -5]}
+          >
             {section === 1 && <boxGeometry />}
             <MeshWobbleMaterial
               opacity={0.2}
@@ -115,7 +133,10 @@ export const Experience = (props) => {
           </mesh>
         </Float>
         <Float>
-          <mesh scale={[3, 4, 2]} position={[0.2, 10, -0.5]}>
+          <mesh
+            scale={isMobile ? [1, 1, 1] : [3, 4, 2]}
+            position={isMobile ? [-3, 1, -3] : [0.2, 10, -0.5]}
+          >
             {section === 1 && <sphereGeometry />}
             <MeshDistortMaterial
               opacity={0.5}
@@ -138,10 +159,26 @@ export const Experience = (props) => {
             />
           </mesh>
         </Float>
-        <group scale={[2, 2, 2]}>
-          <Avatar animation={section === 0 ? "Typing" : "Standing"} />
+        <group
+          scale={isMobile ? [0.9, 0.8, 0.8] : [2, 2, 2]}
+          position={
+            isMobile && section == 0
+              ? [0.55, 4.9, -4.1]
+              : isMobile && section == 1
+              ? [0, 0, 0]
+              : isMobile
+              ? [3, 3, -3.8]
+              : undefined
+          }
+        >
+          <Avatar
+            animation={
+              section === 0 ? "Typing" : section === 2 ? "Agree" : "Standing"
+            }
+          />
         </group>
       </motion.group>
+      <Projects />
     </>
   );
 };
