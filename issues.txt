@@ -1,0 +1,4 @@
+Front page vertically not responsive
+Pranay and Parikh in seperate lines
+Button text not fitting
+Last section icon coming out of block
