@@ -19,7 +19,7 @@ function App() {
 
   setTimeout(() => {
     setIsLoading(false);
-  }, 2000);
+  }, 4000);
   setTimeout(() => {
     setMenuButton(true);
   }, 5000);

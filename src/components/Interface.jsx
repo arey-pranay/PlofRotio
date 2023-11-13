@@ -10,7 +10,7 @@ const Section = (props) => {
   return (
     <motion.section
       className={`
-  h-screen w-screen p-8 max-w-screen-2xl mx-auto
+  h-screen w-screen p-8 pt-[15vh] max-w-screen-2xl mx-auto
   flex flex-col items-start ${
     mobileTop ? "justify-start md:justify-center pt-16" : "justify-center"
   }
@@ -54,7 +54,7 @@ const AboutSection = () => {
         please hit <b>Ctrl + R</b>
       </div> */}
       <Section mobileTop>
-        <h1 className="text-5xl text-white font-extrabold leading-snug">
+        <h1 className="text-2xl sm:text-5xl text-white font-extrabold leading-snug">
           <span className="text-3xl pb-10">Presenting to you✨</span>
           <br />
           <span className="bg-white text-purple-900 px-1 italic">
@@ -62,7 +62,7 @@ const AboutSection = () => {
           </span>
         </h1>
         <motion.p
-          className="text-lg text-gray-50 mt-8 max-w-md"
+          className="text-sm sm:text-lg text-gray-50 mt-8 max-w-md"
           initial={{
             opacity: 0,
             y: 25,
@@ -80,11 +80,11 @@ const AboutSection = () => {
           {/* <br /> */} either learning how to make amazing websites
           {/* <br /> */} or actually making one.{" "}
         </motion.p>
-        <div className="flex gap-2">
+        <div className="flex gap-1 sm:gap-2">
           {" "}
           <motion.button
             className={`bg-pink-500 hover:bg-pink-900 transition-colors ease-in-out text-white sm:py-4 px-4 sm:px-8 
-    rounded-lg font-bold text-md sm:text-lg mt-8`}
+    rounded-lg font-bold text-xs sm:text-lg mt-8`}
             initial={{
               opacity: 0,
               y: 25,
@@ -101,7 +101,7 @@ const AboutSection = () => {
             Say Hi !
           </motion.button>
           <motion.button
-            className={`border-2 border-pink-300 hover:text-pink-500 transition-colors ease-in-out hover:border-white hover:bg-pink-50 text-pink-200 py-4 px-8 
+            className={`border-2 hover:border-pink-300  text-pink-500 transition-colors ease-in-out border-white bg-pink-50 hover:bg-transparent hover:text-pink-200  py-4 px-8 
     rounded-lg font-bold text-lg mt-8`}
             initial={{
               opacity: 0,
@@ -121,7 +121,7 @@ const AboutSection = () => {
         </div>
 
         <motion.p
-          className="text-sm text-gray-50 mt-12 "
+          className="text-sm text-gray-50 mt-6 sm:mt-12 "
           initial={{
             opacity: 0,
             y: 25,
@@ -515,9 +515,9 @@ const ContactSection = () => {
           </div>
         </div>
       </section>
-      <div className="block sm:hidden wrapper h-full mt-12 pt-24 text-center max-w-xs md:w-full">
+      <div className="block sm:hidden wrapper h-full mt-12 sm:pt-24 text-center max-w-xs md:w-full">
         {/* <i className="fa-solid fa-circle-question"></i> */}
-        <div className="YesOrNo mb-24">
+        <div className="YesOrNo mb-12 sm:mb-24">
           <h2 className="question">{question}</h2>
           <div className="btn-group">
             <button className="yes-btn" onClick={handleYesClick}>
