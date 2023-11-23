@@ -98,7 +98,12 @@ const AboutSection = () => {
               delay: 0.5,
             }}
           >
-            Say Hi !
+            <a
+              href="https://www.linkedin.com/in/pranay-parikh-530331218/"
+              target="_blank"
+            >
+              Say Hi !
+            </a>
           </motion.button>
           <motion.button
             className={`border-2 hover:border-pink-300  text-pink-500 transition-colors ease-in-out border-white bg-pink-50 hover:bg-transparent hover:text-pink-200  py-4 px-8 
@@ -116,7 +121,10 @@ const AboutSection = () => {
               delay: 0.5,
             }}
           >
-            Download Resume
+            <a href="pranayResume.pdf" download target="_blank">
+              {" "}
+              Download Resume
+            </a>
           </motion.button>
         </div>
 
@@ -515,7 +523,7 @@ const ContactSection = () => {
           </div>
         </div>
       </section>
-      <div className="block sm:hidden wrapper h-full mt-12 sm:pt-24 text-center max-w-xs md:w-full">
+      <div className="block sm:hidden wrapper h-full mt-12 sm:pt-24 text-center max-w-xs md:w-full ">
         {/* <i className="fa-solid fa-circle-question"></i> */}
         <div className="YesOrNo mb-12 sm:mb-24">
           <h2 className="question">{question}</h2>
