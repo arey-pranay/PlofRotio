@@ -2,7 +2,7 @@ import { Scroll, ScrollControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { MotionConfig } from "framer-motion";
 import { Leva } from "leva";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Cursor } from "./components/Cursor";
 import { Experience } from "./components/Experience";
 import { Interface } from "./components/Interface";
@@ -16,6 +16,7 @@ function App() {
   const [menuOpened, setMenuOpened] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [menuButton, setMenuButton] = useState(false);
+  // const [alertShown, setAlertShown] = useState(false);
 
   setTimeout(() => {
     setIsLoading(false);
@@ -23,6 +24,25 @@ function App() {
   setTimeout(() => {
     setMenuButton(true);
   }, 5000);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     alert(
+  //       "Form and Highlights are still under construction\nThanks a lot for visiting..!"
+  //     );
+  //   }, 6000);
+  // }, []);
+  const alertShown = useRef(false);
+
+  useEffect(() => {
+    if (!alertShown.current && !isLoading) {
+      alertShown.current = true;
+      setTimeout(() => {
+        alert(
+          "Form and Highlights aren't fully functional rn.\nThis website is kinda new.."
+        );
+      }, 5000); // Adjust the delay as needed
+    }
+  }, [isLoading]);
   useEffect(() => {
     setMenuOpened(false);
   }, [section]);
