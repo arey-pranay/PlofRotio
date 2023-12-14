@@ -121,7 +121,7 @@ const AboutSection = () => {
               delay: 0.5,
             }}
           >
-            <a href="pranayResume.pdf" download target="_blank">
+            <a href="pranayRezume.pdf" download target="_blank">
               {" "}
               Download Resume
             </a>
