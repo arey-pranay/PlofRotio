@@ -10,35 +10,35 @@ const isMobile = window.innerWidth < 768;
 export const projects = [
   {
     title: "Crazy 3D experiences",
-    url: "https://pranayparikh.in/",
+    url: "https://showcase-green.vercel.app/",
     image: " projects/P1.jpg",
     description:
       "Made using elm while working with McMaster University in my 2nd year. At that time, unlike React, Javascript, etc. there was no support and big community for elm and specifically for what I was trying to achieve. Usually had to read the documentation and personally find and reach out to people for any doubts. Big thanks to Andrey, Ian, Chris, Professor Anand and Professor Jagalingam for all the help and support.",
   },
   {
     title: "Cool Landing Pages",
-    url: "https://pranayparikh.in/",
+    url: "https://showcase-green.vercel.app/",
     image: " projects/P2.jpg",
     description:
       "Before becoming a fullstack developer, I spent a year or so just playing CSS/JS, until I realized that all these pseudoclasses, grids and animations is super cool but can never be memorized, I will always have to look up to something for recalling how I made it. But in the journey I made some pretty cool landing pages for products",
   },
   {
     title: "Functional Web-Apps",
-    url: "https://pranayparikh.in/",
+    url: "https://showcase-green.vercel.app/",
     image: " projects/P3.jpg",
     description:
       "After escaping the static webpage domain, I learnt React and loved it. The division into components, the JSX things, everything was blowing my mind. Then I learnt the entire MERN stack. And finally learnt about APIs, middlewares, headers, and all. I love using new APIs and creating SPAs in my free time. And finally I learnt about Firebase. It's sooooo dope.",
   },
   {
     title: "Informative Blogs",
-    url: "https://pranayparikh.in/",
+    url: "https://showcase-green.vercel.app/",
     image: " projects/P4.png",
     description:
       "Trying to stay active on LinkedIn for quite a while, and I thought blogs would be a way to do it. Plus I loooove teaching. Whatever I know, I wanna share to those who don't, so that there are more people who understand what developers do, and can help each other out and become part of a bigger community. It's a new venture and I've mentioned the topics that I'll be blogging about. New blogs are out every sunday.",
   },
   {
     title: "Open-Source Contributions",
-    url: "https://pranayparikh.in/",
+    url: "https://showcase-green.vercel.app/",
     image: " projects/P5.jpg",
     description:
       "There is no better way to test your knowledge than to apply it in real world. Open source contributions helped me stay up-to-date with industry standards, taught me how to code collaboratively, needs and benefits of writing clean code, code refactoring, adding comments, best practices and whatnot. It is a really good way to help amazing projects and meet even more more amazing developers",

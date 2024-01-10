@@ -93,7 +93,7 @@ a {
   width: 65%;
   height: 32rem;
   float: right;
-  padding: 40px 25px 35px 25px;
+  padding: 40px 25px 35px 5px;
   border-radius: 0px 30px 30px 0px;
   background: #ecf0f3;
 }
@@ -263,6 +263,7 @@ a {
 @media only screen and (max-width: 767px) {
   .box-wrapper {
     width: 100%;
+    height: auto;
   }
   .info-wrap,
   .form-wrap {

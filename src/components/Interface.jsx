@@ -427,9 +427,12 @@ const ContactSection = () => {
           </button>
         </form>
       </div> */}
-      <section className="hidden sm:block" id="section-wrapper max-w-screen">
-        <div className="box-wrapper md:ml-4">
-          <div className="info-wrap p-2 md:p-10">
+      <section
+        className="hidden sm:flex mb-12 w-full justify-center"
+        id="section-wrapper"
+      >
+        <div className="w-full box-wrapper">
+          <div className="info-wrap md:p-10">
             <div className="wrapper max-w-xs md:w-full">
               {/* <i className="fa-solid fa-circle-question"></i> */}
               <div className="YesOrNo">
@@ -523,7 +526,7 @@ const ContactSection = () => {
           </div>
         </div>
       </section>
-      <div className="block sm:hidden wrapper h-full mt-12 sm:pt-24 text-center max-w-xs md:w-full ">
+      <div className="block sm:hidden wrapper h-[100vh] text-center w-fit p-8 mx-auto ">
         {/* <i className="fa-solid fa-circle-question"></i> */}
         <div className="YesOrNo mb-12 sm:mb-24">
           <h2 className="question">{question}</h2>
@@ -540,10 +543,10 @@ const ContactSection = () => {
             </button>
           </div>
         </div>
-        <div class="icons flex-col  pl-12">
+        <div class="icons flex-col pb-12 gap-6 items-center">
           <a
             href="https://elmlang.slack.com/team/U04NSSXCUPR"
-            class="fb"
+            class="fb pb-12"
             target="_blank"
           >
             <i class="fab fa-slack">&nbsp; &nbsp;Pranay</i>
