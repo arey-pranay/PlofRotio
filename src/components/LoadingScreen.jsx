@@ -18,8 +18,9 @@ const LoadingScreen = () => {
           visible={true}
         />
       </div>
-      <div className="w-screen flex justify-center text-white">
-        Might take a few seconds after this..
+      <div className="w-screen text-center flex justify-center text-white">
+        Might take a few seconds after this screen.. <br /> But it&apos;s gonna
+        be worth the wait <br />I promise {"<3 "}
       </div>
     </div>
   );

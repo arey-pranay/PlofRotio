@@ -1,3 +1,6 @@
+import a from "../assets/roomGiffBigSz.gif";
+import b from "../assets/smallGIF.gif";
+
 export const Menu = (props) => {
   const { section, onSectionChange, menuOpened, setMenuOpened } = props;
   console.log(section);
@@ -47,6 +50,10 @@ export const Menu = (props) => {
             label="Contact"
             onClick={() => onSectionChange(3)}
             stylee={section === 3 ? " rgb(126 34 206)" : ""}
+          />
+          <img
+            src={b}
+            className="border-4 p-1 hover:p-3 my-10 md:my-0 transition-all duration-500 border-purple-700"
           />
         </div>
       </div>

@@ -121,7 +121,7 @@ const AboutSection = () => {
               delay: 0.5,
             }}
           >
-            <a href="pranayRezume.pdf" download target="_blank">
+            <a href="pranayPlainRez.pdf" download target="_blank">
               {" "}
               Download Resume
             </a>
@@ -180,23 +180,23 @@ const skills = [
 ];
 const languages = [
   {
-    title: "Node.js",
-    level: 85,
+    title: "AWS Certified CP",
+    level: 100,
   },
   {
-    title: "Express.js",
+    title: "Node + Express",
     level: 90,
   },
   {
-    title: "Firebase",
+    title: "Next.js Server Actions",
     level: 80,
   },
   {
-    title: "MongoDB",
+    title: "MongoDB / SQL",
     level: 70,
   },
   {
-    title: "APIS Handling",
+    title: "Rest APIs",
     level: 90,
   },
 ];
@@ -485,7 +485,7 @@ const ContactSection = () => {
             </div>
           </div>
           <div className="form-wrap">
-            <form action="#" method="POST">
+            <form action="mailto:pranayparikh2004@gmail.com" method="POST">
               {/* <h2 className="form-title">Let's get in touch !</h2> */}
               <div className="form-fields">
                 <div className="form-group">
@@ -517,11 +517,16 @@ const ContactSection = () => {
                   />
                 </div>
               </div>
-              <input
+              <button
+                onClick={() => {
+                  mailto: "pranayparikh2004@gmail.com";
+                }}
                 // type="submit"
-                defaultValue="Send !!"
-                className="bg-pink-600 submit-button hover:bg-purple-900"
-              />
+                // defaultValue="Send !!"
+                className="bg-pink-600  submit-button hover:bg-purple-900"
+              >
+                Send
+              </button>
             </form>
           </div>
         </div>

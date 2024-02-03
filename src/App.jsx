@@ -37,9 +37,7 @@ function App() {
     if (!alertShown.current && !isLoading) {
       alertShown.current = true;
       setTimeout(() => {
-        alert(
-          "Form and Highlights aren't fully functional rn.\nThis website is kinda new.."
-        );
+        alert("It'll not take this long from next time\nAnd I'll fix it asap");
       }, 5000); // Adjust the delay as needed
     }
   }, [isLoading]);
