@@ -17,14 +17,14 @@ export const projects = [
   },
   {
     title: "Cool Landing Pages",
-    url: "https://showcase-green.vercel.app/",
+    url: "https://pranay-firework.vercel.app/",
     image: " projects/P2.jpg",
     description:
       "Before becoming a fullstack developer, I spent a year or so just playing CSS/JS, until I realized that all these pseudoclasses, grids and animations is super cool but can never be memorized, I will always have to look up to something for recalling how I made it. But in the journey I made some pretty cool landing pages for products",
   },
   {
     title: "Functional Web-Apps",
-    url: "https://showcase-green.vercel.app/",
+    url: "https://pranay-firework.vercel.app/",
     image: " projects/P3.jpg",
     description:
       "After escaping the static webpage domain, I learnt React and loved it. The division into components, the JSX things, everything was blowing my mind. Then I learnt the entire MERN stack. And finally learnt about APIs, middlewares, headers, and all. I love using new APIs and creating SPAs in my free time. And finally I learnt about Firebase. It's sooooo dope.",

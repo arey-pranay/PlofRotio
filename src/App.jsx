@@ -37,7 +37,9 @@ function App() {
     if (!alertShown.current && !isLoading) {
       alertShown.current = true;
       setTimeout(() => {
-        alert("It'll not take this long from next time\nAnd I'll fix it asap");
+        alert(
+          "It'll not take this long from next time\nThanks for your patience :)"
+        );
       }, 5000); // Adjust the delay as needed
     }
   }, [isLoading]);
